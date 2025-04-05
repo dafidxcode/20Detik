@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos from 20Detik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Videos from 20Detik</h1>
+            <p class="last-updated">Terakhir diperbarui: <span id="update-time">-</span></p>
+        </header>
+
+        <div id="categories-container"></div>
+    </div>
+
+    <!-- Video Popup Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="video-player-container">
+                <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 id="video-modal-title"></h2>
+                <p id="video-modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
